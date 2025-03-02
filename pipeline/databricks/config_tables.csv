@@ -1,0 +1,24 @@
+﻿table,table_set,layer,load_type,ingest_type,source_table,table_description,primary_keys,partitions,is_cdf,is_active
+nwi_categories,categories,bronze,FULL CSV,FULL,nwi/dbo/categories,The raw product category details,CategoryID,,N,Y
+nwi_customers,customers,bronze,FULL CSV,FULL,nwi/dbo/customers,The raw customer details,CustomerID,,N,Y
+nwi_employee_territories,employee_territories,bronze,FULL CSV,FULL,nwi/dbo/employee_territories,The raw employee territory details,EmployeeID;TerritoryID,,N,Y
+nwi_employees,employees,bronze,FULL CSV,FULL,nwi/dbo/employees,The raw employee details,EmployeeID,,N,Y
+nwi_order_details,order_details,bronze,STREAM CSV,UPDATE,nwi/dbo/order_details,The raw line item details of the orders,OrderID;ProductID;UnitPrice;Quantity;Discount,,Y,Y
+nwi_orders,orders,bronze,STREAM CSV,UPDATE,nwi/dbo/orders,The raw order details,OrderID,,Y,Y
+nwi_products,products,bronze,FULL CSV,FULL,nwi/dbo/products,The raw product details,ProductID,,N,Y
+nwi_region,region,bronze,FULL CSV,FULL,nwi/dbo/region,The raw region details,RegionID,,N,Y
+nwi_shippers,shippers,bronze,FULL CSV,FULL,nwi/dbo/shippers,The raw shipper details,ShipperID,,N,Y
+nwi_suppliers,suppliers,bronze,FULL CSV,FULL,nwi/dbo/suppliers,The raw supplier details,SupplierID,,N,Y
+nwi_territories,territories,bronze,FULL CSV,FULL,nwi/dbo/territories,The raw territory details,TerritoryID,,N,Y
+categories,categories,silver,FULL,FULL,nwi_categories,The refined product category details,category_id,,N,Y
+customers,customers,silver,FULL,FULL,nwi_customers,The refined customer details,customer_id,,N,Y
+employee_territories,employee_territories,silver,FULL,FULL,nwi_employee_territories,The refined employee territory details,employee_id;territory_id,,N,Y
+employees,employees,silver,FULL,FULL,nwi_employees,The refined employee details,employee_id,,N,Y
+order_details,order_details,silver,STREAM CDF,UPDATE,nwi_order_details,The refined line item details of the orders,order_id;product_id;unit_price;quantity;discount,,N,Y
+orders,orders,silver,STREAM CDF,UPDATE,nwi_orders,The refined order details,order_id,,N,Y
+products,products,silver,FULL,FULL,nwi_products,The refined product details,product_id,,N,Y
+region,region,silver,FULL,FULL,nwi_region,The refined region details,region_id,,N,Y
+shippers,shippers,silver,FULL,FULL,nwi_shippers,The refined shipper details,shipper_id,,N,Y
+suppliers,suppliers,silver,FULL,FULL,nwi_suppliers,The refined supplier details,supplier_id,,N,Y
+territories,territories,silver,FULL,FULL,nwi_territories,The refined territory details,territory_id,,N,Y
+dates,dates,silver,GEN,FULL,none,The full list of dates and their attributes,date,,N,Y

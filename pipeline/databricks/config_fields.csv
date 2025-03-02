@@ -1,0 +1,85 @@
+﻿table_set,field_raw,field_silver,type_raw,type_silver,is_null_silver,is_pii,field_description
+categories,CategoryID,category_id,int,INT,Y,N,The unique id number of the product category
+categories,CategoryName,category_name,nvarchar,STRING,Y,N,The name of the product category
+categories,Description,description,ntext,STRING,Y,N,The description of the product category
+categories,Picture,picture,image,STRING,Y,N,The image associated with the product category
+customers,CustomerID,customer_id,nchar,STRING,Y,N,The unique id number of the customer
+customers,CompanyName,company_name,nvarchar,STRING,Y,N,The company name of the customer
+customers,ContactName,contact_name,nvarchar,STRING,Y,N,The contact name of the customer
+customers,ContactTitle,contact_title,nvarchar,STRING,Y,N,The contact title of the customer
+customers,Address,address,nvarchar,STRING,Y,N,The address of the customer
+customers,City,city,nvarchar,STRING,Y,N,The city of the customer
+customers,Region,region,nvarchar,STRING,Y,N,The region of the customer
+customers,PostalCode,postal_code,nvarchar,STRING,Y,N,The postal code of the customer
+customers,Country,country,nvarchar,STRING,Y,N,The country of the customer
+customers,Phone,phone,nvarchar,STRING,Y,N,The phone number of the customer
+customers,Fax,fax,nvarchar,STRING,Y,N,The fax number of the customer
+employee_territories,EmployeeID,employee_id,int,INT,Y,N,The unique id number of the employee
+employee_territories,TerritoryID,territory_id,nvarchar,STRING,Y,N,The unique id number of the territory
+employees,EmployeeID,employee_id,int,INT,Y,N,The unique id of the employee
+employees,LastName,last_name,nvarchar,STRING,Y,N,The last name of the employee
+employees,FirstName,first_name,nvarchar,STRING,Y,N,The first name of the employee
+employees,Title,title,nvarchar,STRING,Y,N,The job title of the employee
+employees,TitleOfCourtesy,title_of_courtesy,nvarchar,STRING,Y,N,The salutation title of the employee
+employees,BirthDate,birth_date,datetime,TIMESTAMP,Y,Y,The birth date of the employee
+employees,HireDate,hire_date,datetime,TIMESTAMP,Y,N,The date the employee was hired
+employees,Address,address,nvarchar,STRING,Y,N,The address of the employee
+employees,City,city,nvarchar,STRING,Y,N,The city of the employee
+employees,Region,region,nvarchar,STRING,Y,N,The region of the employee
+employees,PostalCode,postal_code,nvarchar,STRING,Y,N,The postal code of the employee
+employees,Country,country,nvarchar,STRING,Y,N,The country of the employee
+employees,HomePhone,home_phone,nvarchar,STRING,Y,N,The home phone number of the employee
+employees,Extension,extension,nvarchar,STRING,Y,N,The extension of the employee
+employees,Photo,photo,image,STRING,Y,N,The photo of the employee
+employees,Notes,notes,ntext,STRING,Y,N,The notes pertaining to the employee
+employees,ReportsTo,reports_to,int,INT,Y,N,The direct reporting manager of the employee
+employees,PhotoPath,photo_path,nvarchar,STRING,Y,N,The photo path of the employee
+order_details,OrderID,order_id,int,INT,Y,N,The unique id number of the associated order
+order_details,ProductID,product_id,int,INT,Y,N,The unique id number of the product
+order_details,UnitPrice,unit_price,money,FLOAT,Y,N,The unit price of the line item sold
+order_details,Quantity,quantity,smallint,INT,Y,N,The quantity of the line item sold
+order_details,Discount,discount,real,FLOAT,Y,N,The discount amount of the line item item
+orders,OrderID,order_id,int,INT,Y,N,The unique id number of the order
+orders,CustomerID,customer_id,nchar,STRING,Y,N,The customer of the order
+orders,EmployeeID,employee_id,int,INT,Y,N,The employee who processed the order
+orders,OrderDate,order_date,datetime,TIMESTAMP,Y,N,The date the order was processed
+orders,RequiredDate,required_date,datetime,TIMESTAMP,Y,N,The date the order is required to be delivered by
+orders,ShippedDate,ship_date,datetime,TIMESTAMP,Y,N,The date the order was shipped
+orders,ShipVia,ship_via,int,INT,Y,N,The carrier responsible for shipping the order
+orders,Freight,freight,money,FLOAT,Y,N,The freight cost of shipping the order
+orders,ShipName,ship_name,nvarchar,STRING,Y,N,The name of the receiver to ship the order to
+orders,ShipAddress,ship_address,nvarchar,STRING,Y,N,The address to ship the order to
+orders,ShipCity,ship_city,nvarchar,STRING,Y,N,The city to ship the order to
+orders,ShipRegion,ship_region,nvarchar,STRING,Y,N,The region to ship the order to
+orders,ShipPostalCode,ship_postal_code,nvarchar,STRING,Y,N,The postal code to ship the order to
+orders,ShipCountry,ship_country,nvarchar,STRING,Y,N,The country to ship the order to
+products,ProductID,product_id,int,INT,Y,N,The unique id number of the product
+products,ProductName,product_name,nvarchar,STRING,Y,N,The name of the product
+products,SupplierID,supplier_id,int,INT,Y,N,The unique id number of the supplier
+products,CategoryID,category_id,int,INT,Y,N,The unique id number of the product category
+products,QuantityPerUnit,quantity_per_unit,nvarchar,STRING,Y,N,The quantity per unit of the product
+products,UnitPrice,unit_price,money,FLOAT,Y,N,The unit price of the order
+products,UnitsInStock,no_units_in_stock,smallint,INT,Y,N,The quantity of units currently in stock
+products,UnitsOnOrder,no_units_on_order,smallint,INT,Y,N,The quantity of units currently on order
+products,ReorderLevel,reorder_level,smallint,INT,Y,N,The quantity at which the product must be reordered
+products,Discontinued,is_discontinued,bit,STRING,Y,N,Specifies if the product is no longer offered
+region,RegionID,region_id,int,INT,Y,N,The unique id number of the region
+region,RegionDescription,region_description,nchar,STRING,Y,N,The description of the region
+shippers,ShipperID,shipper_id,int,INT,Y,N,The unique id number of the shipping company
+shippers,CompanyName,company_name,nvarchar,STRING,Y,N,The name of the shipping company
+shippers,Phone,phone,nvarchar,STRING,Y,N,The phone number of the shipping company
+suppliers,SupplierID,supplier_id,int,INT,Y,N,The unique id number of the supplier
+suppliers,CompanyName,company_name,nvarchar,STRING,Y,N,The company name of the supplier
+suppliers,ContactName,contact_name,nvarchar,STRING,Y,N,The contact name of the supplier
+suppliers,ContactTitle,contact_title,nvarchar,STRING,Y,N,The contact title of the supplier
+suppliers,Address,address,nvarchar,STRING,Y,N,The address of the supplier
+suppliers,City,city,nvarchar,STRING,Y,N,The city of the supplier
+suppliers,Region,region,nvarchar,STRING,Y,N,The region of the supplier
+suppliers,PostalCode,postal_code,nvarchar,STRING,Y,N,The postal code of the supplier
+suppliers,Country,country,nvarchar,STRING,Y,N,The country of the supplier
+suppliers,Phone,phone,nvarchar,STRING,Y,N,The phone of the supplier
+suppliers,Fax,fax,nvarchar,STRING,Y,N,The fax number of the supplier
+suppliers,HomePage,home_page,ntext,STRING,Y,N,The home page of the supplier
+territories,TerritoryID,territory_id,nvarchar,STRING,Y,N,The unique id number of the territory
+territories,TerritoryDescription,territory_description,nchar,STRING,Y,N,The description of the territory
+territories,RegionID,region_id,int,INT,Y,N,The unique id number of the region
