@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# azure_databricks
-=======
 # 🏠 Azure Databricks Data Lakehouse
 
 ## 📋 About The Project
@@ -91,4 +88,3 @@ _Metrics displayed by **ordered date**_
 ![Dashboard Page 2](./images/dashboard_page_2.png)
 
 _Metrics displayed by **shipped date**_
->>>>>>> 0d50c3a (Added readme)
