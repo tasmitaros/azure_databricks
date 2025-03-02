@@ -1,0 +1,15 @@
+{
+	"name": "LS_ADLS_Gen2",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://northwinddl.dfs.core.windows.net/",
+			"tenant": "8ca97b2a-6521-4dc8-978e-1bf055e566db",
+			"servicePrincipalId": "a6b407c7-caf3-4000-9635-8673c4d71c25",
+			"servicePrincipalCredentialType": "ServicePrincipalKey",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDhGQTlFNDlELUQyQzItNENBNC04QjA2LTNDMzRGQkE3RjQ3OV8yYzIyMTU3Yi04YWE0LTQ2ZWMtYjk4OC0yODE0OTU3MmY2ZTkiDQp9"
+		}
+	}
+}

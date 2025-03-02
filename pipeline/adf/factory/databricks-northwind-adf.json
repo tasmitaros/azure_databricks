@@ -1,0 +1,9 @@
+{
+	"name": "databricks-northwind-adf",
+	"location": "australiaeast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "9418c5ea-d568-4a85-be0f-903ba564d0dc",
+		"tenantId": "8ca97b2a-6521-4dc8-978e-1bf055e566db"
+	}
+}

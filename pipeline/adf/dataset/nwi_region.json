@@ -1,0 +1,17 @@
+{
+	"name": "nwi_region",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQL_Server_Northwind",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Region"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

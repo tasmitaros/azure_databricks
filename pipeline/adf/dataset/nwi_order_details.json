@@ -1,0 +1,17 @@
+{
+	"name": "nwi_order_details",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQL_Server_Northwind",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Order Details"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

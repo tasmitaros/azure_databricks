@@ -1,0 +1,21 @@
+{
+	"name": "LS_SQL_Server_Northwind",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "LC-TMITAROS\\SQLEXPRESS",
+			"database": "northwind",
+			"encrypt": "optional",
+			"trustServerCertificate": false,
+			"authenticationType": "Windows",
+			"userName": "IPO\\tmitaros.adm",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJhODg4ZDJiMS05ZTgxLTQ0OTEtYWU0Ny0yNDdmNTJkMGFlYWQiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "ssms-to-adls",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

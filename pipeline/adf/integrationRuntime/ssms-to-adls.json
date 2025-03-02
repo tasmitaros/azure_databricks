@@ -1,0 +1,6 @@
+{
+	"name": "ssms-to-adls",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}
